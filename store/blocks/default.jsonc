@@ -1,0 +1,74 @@
+{
+  "store.orderplaced": {
+    "blocks": ["order-placed"]
+  },
+
+  "store.account": {
+    "blocks": ["my-account"],
+    "parent": {
+      "challenge": "challenge.profile"
+    }
+  },
+
+  "store.login": {
+    "blocks": ["login-content#default"]
+  },
+
+  "login-content#default": {
+    "props": {
+      "isInitialScreenOptionOnly": false,
+      "defaultOption": 1,
+      "showPasswordVerificationIntoTooltip": true
+    }
+  },
+
+  "product-summary.shelf": {
+    "children": [
+      "product-summary-image",
+      "product-summary-add-to-list-button",
+      "product-summary-sku-selector",
+      "product-summary-brand",
+      "product-summary-name",
+      "product-rating-inline",
+      "product-list-price",      
+      "product-summary-price",      
+      "add-to-cart-button"
+    ]
+  },
+  "product-summary-image":{
+    "props":{
+      "showBadge":true,
+      "displayMode":"inline",
+      "width":{
+        "desktop":220,
+        "mobile":150
+      },
+      "mainImageLabel":{"labelMatchCriteria": "contains"}
+    }
+  },
+  "product-summary-sku-selector": {
+    "props":{
+      "displayMode":"slider",
+      "sliderItemsPerPage":{
+        "desktop":3
+      },
+      "visibleVariations":["TALLA"],
+      "disableUnavailableSelectOptions":true,
+      "initialSelection":"empty"
+    }
+  },
+  "product-summary-price": {
+    "props":{
+      "showDiscountValue":false,
+      "showInstallments": false,
+      "showBorders":false,
+      "showListPrice":false
+    }
+  },
+  "add-to-cart-button": {
+    "props":{
+      "text":"Agregar producto",
+      "customPixelEventId":"agregado"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.logoContainer{
+    background-color: #2c2c2c;
+    border-radius: 0 25px 25px 0;
+    display: flex;
+    align-items: center;
+    opacity: 0.8;
+}
+.skuSelectorTextContainer{
+    display: flex;
+    justify-content: center;
+}
+.skuSelectorOptionsList{
+    justify-content: center;
+}
+.skuSelectorNameContainer{
+    margin: 0;
+}
+.discountInsideContainer{
+    background-color: #fff;
+    color: red;
+    border: 1px solid red;
+    left: 0;
+    width: 3rem;
+}

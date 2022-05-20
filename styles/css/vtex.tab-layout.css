@@ -1,0 +1,11 @@
+.listItem :global(.vtex-button){
+    color: #2c2c2c;
+    border: 0.5px solid #2c2c2c;
+    border-radius: 0;
+}
+.listItemActive :global(.vtex-button){
+    background-color: red;
+    border: solid red;
+    border-radius: 0;
+    color: #fff;
+}

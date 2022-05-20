@@ -1,0 +1,58 @@
+{
+    /**** Phone slider ****/
+    "list-context.product-list#Phones": {
+        "blocks": ["product-summary.shelf"],
+        "children":["slider-layout#Phones"],
+        "props":{
+            "category":"Tecnologia/Dispositivos Moviles",
+            "orderBy":"OrderByTopSaleDESC",
+            "hideUnavailableItems": true
+        }
+        },
+        "slider-layout#Phones":{
+            "props":{
+                "infinite": true,
+                "showNavigationArrows": "always",
+                "itemsPerPage":{ "desktop": 4, "tablet": 2, "phone": 1 },
+                "fullWidth":false
+            }
+        },
+
+    /**** Kids slider ****/
+    "list-context.product-list#Infantil": {
+            "blocks": ["product-summary.shelf"],
+            "children":["slider-layout#Kids"],
+            "props":{
+                "category":"Ropa infantil",
+                "orderBy":"OrderByTopSaleDESC"
+            }
+            },
+        "slider-layout#Kids":{
+                "props":{
+                    "infinite": true,
+                    "showNavigationArrows": "always",
+                    "itemsPerPage":{ "desktop": 4, "tablet": 2, "phone": 1 },
+                    "fullWidth":false
+                }
+        },
+
+    /**** Shirts slider ****/
+    "list-context.product-list#Camisas": {
+            "blocks": ["product-summary.shelf"],
+            "children":["slider-layout#Shirts"],
+            "props":{
+                "category":"Computacion/Software",
+                "orderBy":"OrderByTopSaleDESC",
+                "hideUnavailableItems": true
+            }
+            },
+    "slider-layout#Shirts":{
+                "props":{
+                    "infinite": true,
+                    "showNavigationArrows": "always",
+                    "itemsPerPage":{ "desktop": 4, "tablet": 2, "phone": 1 },
+                    "fullWidth":false
+                }
+        }
+    
+}

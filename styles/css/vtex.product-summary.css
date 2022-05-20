@@ -1,0 +1,86 @@
+.element:hover .productBrandContainer{
+    height: 1rem;
+    opacity: 1;
+}
+.element:hover .skuSelectorContainer{
+    height: 4rem;
+    opacity: 1;
+}
+.element :global(.vtex-button){
+    display: none;
+    background-color: #fff;
+    border: 1px solid #2c2c2c;
+    color:#2c2c2c;
+    font-weight: 700;
+}
+.element:hover :global(.vtex-button){
+    display: block;
+}
+
+@media screen and (max-width:1025px) {
+    .element :global(.vtex-button){
+        display: block;
+    }
+    .element .productBrandContainer{
+        height: 1rem;
+        opacity: 1;
+    }
+    .element .skuSelectorContainer{
+        height: 4rem;
+        opacity: 1;
+    }
+}
+
+.element:hover :global(.vtex-button):hover{    
+    box-shadow: 0 1px#000000;
+}
+
+.element :global(.vtex-button):focus{
+    background-color: red;
+    color: #fff;
+    border:none;
+}
+.frameAround{
+    border:none
+}
+
+.priceContainer{
+    height: 2rem;
+    padding: 0;
+    align-items: flex-start;
+}
+.productBrand{
+    font-size: 15px;
+    color: #2c2c2c;
+}
+.productBrandContainer{
+   height: 0;
+   opacity: 0;
+   transition: .3s all ease;
+}
+.skuSelectorContainer{   
+   height: 0;
+   opacity: 0;
+   padding: 0;
+   margin: 0;
+   transition: .3s all ease-out;
+}
+.skuSelectorInternalBox{
+    border-radius: none;
+}
+.skuSelectorInternalBox:hover{
+    border: 2px solid red;
+    border-radius: none;
+}
+
+.skuSelectorItem--selected{
+    background-color: red;
+    color: #fff;
+    border: 1px solid red;
+}
+.skuSelectorItem--selected .skuSelectorInternalBox{
+    border: none;
+}
+.skuSelectorItem--selected .valueWrapper{
+    color: #fff;
+}

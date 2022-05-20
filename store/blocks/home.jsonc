@@ -1,0 +1,89 @@
+{
+  "store.home": { 
+    "blocks": ["tab-layout#Showcase"]
+  },
+
+  /**** Main table ****/
+  "tab-layout#Showcase": { 
+    "children": [ 
+      "tab-list#Showcase",
+      "tab-content#Showcase"
+    ]
+  },
+  /**** Buttons ****/
+  "tab-list#Showcase":{
+    "children":[
+      "tab-list.item#Showcase1",
+      "tab-list.item#Showcase2",
+      "tab-list.item#Showcase3",
+      "tab-list.item#Showcase4",
+      "tab-list.item#Showcase5"
+    ]
+  },
+    "tab-list.item#Showcase1":{
+      "props":{
+          "tabId":"Showcase1",
+          "label":"Celulares"
+      }
+    },
+    "tab-list.item#Showcase2":{
+      "props":{
+          "tabId":"Showcase2",
+          "label":"Infantil"
+      }
+    },
+    "tab-list.item#Showcase3":{
+      "props":{
+          "tabId":"Showcase3",
+          "label":"Camisas",
+          "defaultActiveTab": true
+      }
+    },
+    "tab-list.item#Showcase4":{
+      "props":{
+          "tabId":"Showcase4",
+          "label":"Botas"
+      }
+    },
+    "tab-list.item#Showcase5":{
+      "props":{
+          "tabId":"Showcase5",
+          "label":"Tenis deportivos"
+      }
+    },
+  /**** Card content ****/
+  
+  "tab-content#Showcase":{
+    "children":[
+      "tab-content.item#Celulares" ,
+      "tab-content.item#Infantil",
+      "tab-content.item#Camisas"/*,
+      "tab-content.item#Botas",
+      "tab-content.item#TenisDeportivos" */
+    ]
+  },
+  "tab-content.item#Celulares":{
+    "children":[
+      "list-context.product-list#Phones"
+    ],
+    "props":{
+      "tabId":"Showcase1"
+    }
+  },
+  "tab-content.item#Infantil":{
+    "children":[
+      "list-context.product-list#Infantil"
+    ],
+    "props":{
+      "tabId":"Showcase2"
+    }
+  },
+  "tab-content.item#Camisas":{
+    "children":[
+      "list-context.product-list#Camisas"
+    ],
+    "props":{
+      "tabId":"Showcase3"
+    }
+  }
+}
